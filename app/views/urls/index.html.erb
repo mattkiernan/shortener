@@ -2,6 +2,8 @@
 
 <ul>
   <% @urls.each do |url| %>
-    <li><%= url.original %> - <%= url.short %></li>
+    <li><%= url.original %></li>
   <% end %>
 </ul>
+
+<%= link_to "Shorten a url", new_url_path %>
