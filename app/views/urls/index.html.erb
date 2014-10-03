@@ -1,7 +1,7 @@
-<h1>Please enter a URL to shorten: </h1>
-<%= form_for @url do |form| %>
-  <%= form.label :url %>
-  <%= form.text_field :original %>
-  <%= form.submit "ENTER THAT SHIT" %>
-<% end %>
+<h1>List of Urls</h1>
 
+<ul>
+  <% @urls.each do |url| %>
+    <li><%= url.original %> - <%= url.short %></li>
+  <% end %>
+</ul>
